@@ -9,7 +9,7 @@ class Note < ActiveRecord::Base
   def preview
     
     if self.content.length > 100
-      self.content.slice(0..100) << '...(read more)'
+      self.content.slice(0..100) << '...(read the rest)'
     else
       self.content
     end
