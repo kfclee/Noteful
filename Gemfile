@@ -50,3 +50,7 @@ group :production do
   gem 'rails_12factor'
   gem 'pg'
 end
+
+group :test, :development do
+  gem 'rspec-rails', '~> 3.0.0'
+end
