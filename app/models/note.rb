@@ -7,7 +7,6 @@ class Note < ActiveRecord::Base
   scope :sorted, lambda { order('created_at DESC') }
 
   def preview
-    
     if self.content.length > 100
       self.content.slice(0..100) << '...(read the rest)'
     else
